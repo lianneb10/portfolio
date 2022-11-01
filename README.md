@@ -24,11 +24,12 @@ test
 
 <h2 id="installation">🔧 Installation </h2>
 ***
-1. 
+1. On the homepage of this repository, click "Code" and then download the code.
+2. Once you have downloaded the file, you are then able to 
 
 <h2 id="user-stories">💬 User Stories </h2>
 ***
-* As someone on a hiring team, I want to see the different projects and experience to see if this person would be a good fit on a team I am hiring for
+* As someone on a hiring team, I want to see the different projects and experience to see if this person would be a good fit on a team I athank m hiring for
 * As a person interested in making a shift into tech, I want to see what this person worked on and did when enrolled in their bootcamp to see if it could be a good fit for me
 * As a friend/family member of the person who made this site, I want to know the different things that this person has worked on
 
