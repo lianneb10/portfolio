@@ -1,17 +1,48 @@
 body {
     font-family:"Work Sans", sans-serif;
-    
+
 }
 
 /* .intro {
     background-color: gray;
 } */
+div.navbar {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
 
 section.intro {
-    max-width: 500px;
-    max-height: 500px;
-    border-radius: 25px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* border-radius: 25px;
     text-align: center;
     padding: 50px;
-    background: rgb(198, 220, 225)
+    background: rgb(198, 220, 225) */
+}
+
+h1 {
+    font-size: 62px;
+}
+
+img.profile {
+    width: 300px;
+    float: right;
+    border-radius: 150px;
+    margin-left: 50px;
+
+}
+
+section.aboutText {
+    max-width: 900px;
+    clear: both;
+}
+
+section.projectText {
+    max-width: 1100px;
 }
