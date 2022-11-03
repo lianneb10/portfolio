@@ -1,0 +1,17 @@
+body {
+    font-family:"Work Sans", sans-serif;
+    
+}
+
+/* .intro {
+    background-color: gray;
+} */
+
+section.intro {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 50px;
+    background: rgb(198, 220, 225)
+}
