@@ -57,28 +57,16 @@ Envelope CSS
 .envelope img{
     height: 50px;
 }
-.uGotMail {
+
+.message {
     position: absolute;
-    bottom: 55px;
-    right: -60px;
+    bottom: 82px;
+    right: 10px;
     font-size: 15px;
     width: 150px;
+    text-align: center;
 }
 
-.hereUGo {
-    position: absolute;
-    bottom: 55px;
-    right: -40px;
-    font-size: 15px;
-    width: 150px;
-    flex-wrap: wrap;
-}
-
-/* .envelope {
-    display:flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-} */
 .envelope .closed {
     display: inherit;
 }
@@ -88,12 +76,29 @@ Envelope CSS
 }
 
 .envelope.heart .closed {
-	display: none;
+    display: none;
 }
 
 .envelope.heart .open {
 	display: inherit;
 }
+
+.message .closed {
+	display: inherit;
+}
+
+.message .open {
+	display: none;
+}
+
+.message.heart .closed {
+	display: none;
+}
+
+.message.heart .open {
+	display: inherit;
+}
+
 /*
 Nav bar CSS
 */

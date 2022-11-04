@@ -35,5 +35,6 @@ const openPls = document.querySelector(".envelope")
 openPls.addEventListener("click", giveMessage)
 
 function giveMessage(event) {
-    document.querySelector(".envelope").classList.toggle("heart")
+    document.querySelector(".envelope").classList.toggle("heart");
+     document.querySelector('.message').classList.toggle('heart');
 }
