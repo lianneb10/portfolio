@@ -18,14 +18,14 @@ test
 
 <h2 id="technologies"> 💻 Technologies List </h2>
 
-* Item 1
-* Item 2
-* Item 3
+* HTML
+* CSS
 
 <h2 id="installation">🔧 Installation </h2>
 
 1. On the homepage of this repository, click "Code" and then download the code.
-2. Once you have downloaded the file, you are then able to cd 
+2. Once you have downloaded the file, you are then able to open the code with VSCode
+3. In order to preview the site, use LivePreview (a VSCode extension)
 
 <h2 id="user-stories">💬 User Stories </h2>
 
@@ -38,5 +38,5 @@ test
 <img width="356" alt="Screen Shot 2022-10-31 at 4 59 43 PM" src="https://user-images.githubusercontent.com/114965043/199308435-99c70f2e-d541-411f-9d73-9ea218dace1c.png">
 
 <h2 id="hurdles">:construction_worker: Hurdles </h2>
-test 
-test
+
+*CSS formatting was a hurdle for me personally, needed a lot of trial and error for it to look the way I wanted it to
