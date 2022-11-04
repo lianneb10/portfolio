@@ -1,10 +1,37 @@
 body {
     font-family:"Work Sans", sans-serif;
-
+    margin-left: 100px;
+    padding: 0 20px;
 }
+
+/*
+Color Bar CSS 
+*/
+.colorBar {
+background: linear-gradient(180deg, rgb(247,202,201), rgb(222,194,203), rgb(197,185,205), rgb(171,177,207), rgb(146,168,209), rgb(171,177,207), rgb(197,185,205),rgb(222,194,203),rgb(247,202,201));
+width: 100px;
+position: fixed;
+left: 0;
+top:0;
+bottom:0;
+z-index: -1;
+}
+
+/* .colorBar:hover{
+    animation: slide 2s infinite linear;
+}
+
+@keyframes slide {
+    0%{
+        background-position-y: 0%;
+    }
+    100%{
+        background-position-y: 100vh;
+    }
+} */
 /*
 Nav bar CSS
-}*/
+*/
 .navbar {
     max-width: 900px;
     margin-left: auto;
@@ -19,7 +46,7 @@ Nav bar CSS
 }
 /*
 Overall section CSS
-}*/
+*/
 section#intro{
      padding-top: 30vh;
 }
@@ -31,6 +58,15 @@ section {
     padding-bottom: 100px;
     clear: both;
     letter-spacing: 0.04em;
+}
+
+a{
+  color: rgb(92, 112, 149);
+  transition: color 0.5s;
+}
+
+a:hover{
+    color: rgb(239, 176, 196);
 }
 
 h1 {
@@ -45,7 +81,7 @@ h2 {
 }
 /*
 Intro CSS/Home Page CSS 
-}*/
+*/
 
 img.profile {
     width: 300px;
@@ -57,7 +93,7 @@ img.profile {
 
 /*
 About Section CSS
-}*/
+*/
 img.about {
     width: 300px;
     float: left;
@@ -70,7 +106,7 @@ section#about{
 
 /*
 Resume Section CSS
-}*/
+*/
 
  img.resume {
     max-width: 500px;
@@ -84,7 +120,7 @@ Resume Section CSS
  
 /*
 Project CSS
-}*/
+*/
 img.projImg {
     width: 200px;
     margin: auto;
@@ -105,7 +141,7 @@ div.projectList {
 
 /*
 Links CSS
-}*/
+*/
 div.linkcolumns {
     display: flex;
     align-items: center;
@@ -128,6 +164,5 @@ div.linkcolumns figcaption{
 
 section#links a{
     text-decoration: none;
-    color: darkblue;
     font-size: 15px;
 }
