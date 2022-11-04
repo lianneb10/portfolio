@@ -38,8 +38,13 @@ Nav bar CSS
     margin-right: auto;
     display: flex;
     justify-content: space-around;
+    opacity: 0.4;
+    transition: opacity 0.5s;
 }
 
+.navbar:hover{
+    opacity: 1;
+}
 .navbar a{
     text-decoration: none;
     color: inherit;
