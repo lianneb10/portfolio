@@ -14,7 +14,8 @@ This website is a beginning portfolio that I will continue to add to as I contin
 
 <h2 id="screenshot">  🖼️ Embedded Screenshot </h2>
 
-test
+<img width= "600" alt= "Screen Shot 2022-11-04" src="https://user-images.githubusercontent.com/114965043/200081723-17be1196-88d5-4b6e-a5e6-585c3f03beff.png">
+
 
 <h2 id="technologies"> 💻 Technologies List </h2>
 
