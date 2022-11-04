@@ -31,6 +31,38 @@ animation: slide 2s infinite linear;
 }
 
 /*
+Envelope CSS
+*/
+.envelope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 50px;
+    bottom: 30px;
+}
+
+.envelope .closed {
+    height: 50px;
+}
+
+.envelope .open {
+    height: 50px;
+    display: none;
+}
+
+.envelope.heart .closed{
+    height: 50px;
+    display: none;
+}
+
+.envelope.heart .open {
+    height: 50px;
+    display: inherit;
+}
+/*
 Nav bar CSS
 */
 .navbar {
@@ -41,6 +73,9 @@ Nav bar CSS
     justify-content: space-around;
     opacity: 0.4;
     transition: opacity 0.5s;
+}
+div.menuIcon {
+    display:none;
 }
 
 .navbar:hover{
@@ -183,6 +218,11 @@ section#links a{
         font-size: 0.9em;
     }
 
+    div.menuIcon {
+        display: block;
+        padding-top: 10px;
+    }
+
     img.profile {
     width: 180px;
     float: none;
@@ -193,10 +233,28 @@ section#links a{
     .navbar {
         flex-direction: column;
         font-size: 1.5em;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        opacity: 1;
+        top: 50px;
+        left: 18px;
+        right: 5px;
+        backdrop-filter: blur(5px);
+        height: 250px;
+        transition: height 0.5s;
+        overflow:hidden;
+
     }
+
+    .navbar.hidden {
+         height: 0;
+         overflow: hidden;
+    }
+
     .navbar a{
         padding: 10px;
     }
+
     section#intro{
         padding-top: 20px;
     }
