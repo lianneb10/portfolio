@@ -110,19 +110,6 @@ section#about{
     text-indent: 20px;
 }
 
-/*
-Resume Section CSS
-*/
-
- img.resume {
-    max-width: 500px;
-    box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.25);
- }
-
- div.resumeHold {
-    text-align: center;
- }
-
  
 /*
 Project CSS
@@ -140,9 +127,22 @@ div.projectList {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 900px;
+    max-width: 900px;
     flex-wrap: wrap;
 }
+
+/*
+Resume Section CSS
+*/
+
+ img.resume {
+    max-width: 500px;
+    box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ div.resumeHold {
+    text-align: center;
+ }
 
 
 /*
@@ -171,4 +171,75 @@ div.linkcolumns figcaption{
 section#links a{
     text-decoration: none;
     font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .colorBar {
+        width: 10px;
+    }
+
+    body {
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+
+    img.profile {
+    width: 180px;
+    float: none;
+    border-radius: 150px;
+    margin-left: 0px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        font-size: 1.5em;
+    }
+    .navbar a{
+        padding: 10px;
+    }
+    section#intro{
+        padding-top: 20px;
+    }
+      section {
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img.about {
+        width: 200px;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    img.projImg {
+        margin: 0px auto 15px auto;
+    }
+
+    section#projects figure {
+        width:auto;
+        margin: 20px 0px;
+    }
+    div.projectList {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    img.resume {
+        max-width: 100% ;
+    }
+
+    div.linkcolumns {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+   
+    h5{
+        text-align: left;
+    }
 }
