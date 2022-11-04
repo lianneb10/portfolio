@@ -5,7 +5,7 @@ body {
 /*
 Nav bar CSS
 }*/
-div.navbar {
+.navbar {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -13,18 +13,21 @@ div.navbar {
     justify-content: space-around;
 }
 
-div.navbar a{
+.navbar a{
     text-decoration: none;
     color: inherit;
 }
 /*
 Overall section CSS
 }*/
+section#intro{
+     padding-top: 30vh;
+}
 section {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     clear: both;
     letter-spacing: 0.04em;
