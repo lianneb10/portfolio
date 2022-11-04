@@ -1,303 +1,329 @@
 body {
-    font-family:"Work Sans", sans-serif;
-    margin-left: 100px;
-    padding: 0 20px;
+	font-family: 'Work Sans', sans-serif;
+	margin-left: 100px;
+	padding: 0 20px;
 }
 
 /*
 Color Bar CSS 
 */
 .colorBar {
-background: linear-gradient(180deg, rgb(247,202,201), rgb(222,194,203), rgb(197,185,205), rgb(171,177,207), rgb(146,168,209), rgb(171,177,207), rgb(197,185,205),rgb(222,194,203),rgb(247,202,201));
-width: 100px;
-position: fixed;
-left: 0;
-top:0;
-bottom:0;
-z-index: -1;
+	background: linear-gradient(
+		180deg,
+		rgb(247, 202, 201),
+		rgb(222, 194, 203),
+		rgb(197, 185, 205),
+		rgb(171, 177, 207),
+		rgb(146, 168, 209),
+		rgb(171, 177, 207),
+		rgb(197, 185, 205),
+		rgb(222, 194, 203),
+		rgb(247, 202, 201)
+	);
+	width: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
 }
 
 .colorBar.animate {
-animation: slide 2s infinite linear;
+	animation: slide 2s infinite linear;
 }
 
 @keyframes slide {
-    0%{
-        background-position-y: 0%;
-    }
-    100%{
-        background-position-y: 100vh;
-    }
+	0% {
+		background-position-y: 0%;
+	}
+	100% {
+		background-position-y: 100vh;
+	}
 }
 
 /*
 Envelope CSS
 */
 .envelope {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	right: 50px;
+	bottom: 30px;
+}
+.envelope img{
+    height: 50px;
+}
+.uGotMail {
     position: absolute;
-    width: 70px;
-    height: 70px;
-    right: 50px;
-    bottom: 30px;
+    bottom: 55px;
+    right: -60px;
+    font-size: 15px;
+    width: 150px;
 }
 
+.hereUGo {
+    position: absolute;
+    bottom: 55px;
+    right: -40px;
+    font-size: 15px;
+    width: 150px;
+    flex-wrap: wrap;
+}
+
+/* .envelope {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+} */
 .envelope .closed {
-    height: 50px;
+    display: inherit;
 }
 
 .envelope .open {
-    height: 50px;
-    display: none;
+	display: none;
 }
 
-.envelope.heart .closed{
-    height: 50px;
-    display: none;
+.envelope.heart .closed {
+	display: none;
 }
 
 .envelope.heart .open {
-    height: 50px;
-    display: inherit;
+	display: inherit;
 }
 /*
 Nav bar CSS
 */
 .navbar {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
-    opacity: 0.4;
-    transition: opacity 0.5s;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	opacity: 0.4;
+	transition: opacity 0.5s;
 }
 div.menuIcon {
-    display:none;
+	display: none;
 }
 
-.navbar:hover{
-    opacity: 1;
+.navbar:hover {
+	opacity: 1;
 }
-.navbar a{
-    text-decoration: none;
-    color: inherit;
+.navbar a {
+	text-decoration: none;
+	color: inherit;
 }
 /*
 Overall section CSS
 */
-section#intro{
-     padding-top: 30vh;
+section#intro {
+	padding-top: 30vh;
 }
 section {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    clear: both;
-    letter-spacing: 0.04em;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	clear: both;
+	letter-spacing: 0.04em;
 }
 
-a{
-  color: rgb(92, 112, 149);
-  transition: color 0.5s;
+a {
+	color: rgb(92, 112, 149);
+	transition: color 0.5s;
 }
 
-a:hover{
-    color: rgb(239, 176, 196);
+a:hover {
+	color: rgb(239, 176, 196);
 }
 
 h1 {
-    font-size: 62px;
-    margin-top: 0px;
+	font-size: 62px;
+	margin-top: 0px;
 }
 
 h2 {
-    font-size: 40px;
-    text-align: center;
-    
+	font-size: 40px;
+	text-align: center;
 }
 /*
 Intro CSS/Home Page CSS 
 */
 
 img.profile {
-    width: 300px;
-    float: right;
-    border-radius: 150px;
-    margin-left: 50px;
-
+	width: 300px;
+	float: right;
+	border-radius: 150px;
+	margin-left: 50px;
 }
 
 /*
 About Section CSS
 */
 img.about {
-    width: 300px;
-    float: left;
-    margin-right: 50px;
-
+	width: 300px;
+	float: left;
+	margin-right: 50px;
 }
-section#about{
-    text-indent: 20px;
+section#about {
+	text-indent: 20px;
 }
 
- 
 /*
 Project CSS
 */
 img.projImg {
-    width: 200px;
-    margin: auto;
+	width: 200px;
+	margin: auto;
 }
 
-section#projects figure{
-    width: 200px;
+section#projects figure {
+	width: 200px;
 }
 
 div.projectList {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 900px;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	max-width: 900px;
+	flex-wrap: wrap;
 }
 
 /*
 Resume Section CSS
 */
 
- img.resume {
-    max-width: 500px;
-    box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.25);
- }
+img.resume {
+	max-width: 500px;
+	box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.25);
+}
 
- div.resumeHold {
-    text-align: center;
- }
-
+div.resumeHold {
+	text-align: center;
+}
 
 /*
 Links CSS
 */
 div.linkcolumns {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
-div.linkcolumns figure{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    width: 300px;
+div.linkcolumns figure {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	width: 300px;
 }
-div.linkcolumns figcaption h5{
-    font-weight: 600;
-    margin: 0px 0px 5px 0px;
-    font-size: 18px;
+div.linkcolumns figcaption h5 {
+	font-weight: 600;
+	margin: 0px 0px 5px 0px;
+	font-size: 18px;
 }
-div.linkcolumns figcaption{
-    margin-left: 10px;
+div.linkcolumns figcaption {
+	margin-left: 10px;
 }
 
-section#links a{
-    text-decoration: none;
-    font-size: 15px;
+section#links a {
+	text-decoration: none;
+	font-size: 15px;
 }
 
 @media (max-width: 600px) {
-    .colorBar {
-        width: 10px;
-    }
+	.colorBar {
+		width: 10px;
+	}
 
-    body {
-        margin-left: 10px;
-        font-size: 0.9em;
-    }
+	body {
+		margin-left: 10px;
+		font-size: 0.9em;
+	}
 
-    div.menuIcon {
-        display: block;
-        padding-top: 10px;
-    }
+	div.menuIcon {
+		display: block;
+		padding-top: 10px;
+	}
 
-    img.profile {
-    width: 180px;
-    float: none;
-    border-radius: 150px;
-    margin-left: 0px;
-    }
+	img.profile {
+		width: 180px;
+		float: none;
+		border-radius: 150px;
+		margin-left: 0px;
+	}
 
-    .navbar {
-        flex-direction: column;
-        font-size: 1.5em;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.8);
-        opacity: 1;
-        top: 50px;
-        left: 18px;
-        right: 5px;
-        backdrop-filter: blur(5px);
-        height: 250px;
-        transition: height 0.5s;
-        overflow:hidden;
+	.navbar {
+		flex-direction: column;
+		font-size: 1.5em;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.8);
+		opacity: 1;
+		top: 50px;
+		left: 18px;
+		right: 5px;
+		backdrop-filter: blur(5px);
+		height: 250px;
+		transition: height 0.5s;
+		overflow: hidden;
+	}
 
-    }
+	.navbar.hidden {
+		height: 0;
+		overflow: hidden;
+	}
 
-    .navbar.hidden {
-         height: 0;
-         overflow: hidden;
-    }
+	.navbar a {
+		padding: 10px;
+	}
 
-    .navbar a{
-        padding: 10px;
-    }
+	section#intro {
+		padding-top: 20px;
+	}
+	section {
+		text-align: center;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
 
-    section#intro{
-        padding-top: 20px;
-    }
-      section {
-        text-align: center;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
+	h1 {
+		font-size: 30px;
+	}
 
-    h1 {
-        font-size: 30px;
-    }
+	img.about {
+		width: 200px;
+		float: none;
+		display: block;
+		margin: auto;
+	}
 
-    img.about {
-        width: 200px;
-        float: none;
-        display: block;
-        margin: auto;
-    }
+	img.projImg {
+		margin: 0px auto 15px auto;
+	}
 
-    img.projImg {
-        margin: 0px auto 15px auto;
-    }
+	section#projects figure {
+		width: auto;
+		margin: 20px 0px;
+	}
+	div.projectList {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
 
-    section#projects figure {
-        width:auto;
-        margin: 20px 0px;
-    }
-    div.projectList {
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
+	img.resume {
+		max-width: 100%;
+	}
 
-    img.resume {
-        max-width: 100% ;
-    }
+	div.linkcolumns {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
 
-    div.linkcolumns {
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-   
-    h5{
-        text-align: left;
-    }
+	h5 {
+		text-align: left;
+	}
 }
