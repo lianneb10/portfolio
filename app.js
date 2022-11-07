@@ -28,7 +28,7 @@ function menuOpen(event) {
     document.querySelector(".navbar").classList.toggle("hidden");
 }
 
-//when user clicks envelope icon on bottom right of screen, they receive a randomized message
+//when user clicks envelope icon on bottom right of screen, they receive a message
 
 const openPls = document.querySelector(".envelope")
 
