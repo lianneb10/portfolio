@@ -182,30 +182,23 @@ section#about {
 /*
 Project CSS
 */
-img.projImg {
-	width: 300px;
+figure.proj {
 	justify-content: center;
-	margin: 0 250px;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.project-hold {
+	text-align: center;
+}
+
+img.projImg {
+	width: 500px;
+	justify-content: center;
 }
 
 section#projects figure {
 	width: 800px;
-}
-
-figure.proj {
-	justify-content: center;
-	margin: 0 auto;
-	width: 300;
-}
-
-figcaption {
-	text-align: center;
-	margin: 0 auto;
-	width: 300px;
-}
-
-h3 {
-	text-align: center;
 }
 
 div.projectList {
